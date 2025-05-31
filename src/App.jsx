@@ -47,7 +47,7 @@ function App() {
           })}
         </div>
         {
-          images.length > 0 && <button className='bg-blue-500 text-white font-semibold flex justify-center items-center cursor-pointer text-[1.2rem] sm:text-2xl p-2 w-full rounded-[8px]' onClick={handleConvertToPdf}>Convert to pdf</button>
+          images.length > 0 && <button className='bg-blue-500 text-white transition-all duration-100 transform active:scale-90 hover:bg-blue-600 font-semibold flex justify-center items-center cursor-pointer text-[1.2rem] sm:text-2xl p-2 w-full rounded-[8px]' onClick={handleConvertToPdf}>Convert to pdf</button>
         }
       </div>
     </div>
