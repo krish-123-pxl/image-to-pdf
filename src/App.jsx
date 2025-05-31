@@ -46,7 +46,9 @@ function App() {
             return <img src={img} key={i} className='h-[100px] w-[100px] rounded-2xl' />
           })}
         </div>
-        <button className='bg-blue-500 text-white font-semibold flex justify-center items-center cursor-pointer text-[1.2rem] sm:text-2xl p-2 w-full rounded-[8px]' onClick={handleConvertToPdf}>Convert to pdf</button>
+        {
+          images.length > 0 && <button className='bg-blue-500 text-white font-semibold flex justify-center items-center cursor-pointer text-[1.2rem] sm:text-2xl p-2 w-full rounded-[8px]' onClick={handleConvertToPdf}>Convert to pdf</button>
+        }
       </div>
     </div>
   )
