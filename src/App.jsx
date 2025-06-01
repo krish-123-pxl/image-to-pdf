@@ -35,13 +35,13 @@ function App() {
 
   return (
     <div className='bg-gray-200 w-full h-screen flex flex-col items-center justify-center'>
-      <div className='bg-white w-[350px] sm:w-[400px] rounded-3xl shadow-2xl flex flex-col items-center justify-between p-5 gap-4'>
+      <div className='bg-white w-[310px] sm:w-[400px] rounded-3xl shadow-2xl flex flex-col items-center justify-between p-5 gap-4'>
         <div className='text-[16px] sm:text-2xl flex items-center justify-center gap-2 font-semibold'><img className='rounded-[3px] h-[1rem] sm:h-[22px]' src={image_icon} />IMAGE TO PDF CONVERTOR</div>
         <div className='relative flex items-center justify-center'>
-          <input type="file" multiple accept='image/*' onChange={handleImageUpload} className='cursor-pointer border-4 border-dashed border-blue-800 p-2 sm:p-7 text-blue-800 py-7 sm:py-11 rounded-2xl' />
+          <input type="file" multiple accept='image/*' onChange={handleImageUpload} className='cursor-pointer border-2 sm:border-4 border-dashed border-blue-800 sm:p-7 text-blue-800 py-5 sm:py-11 rounded-2xl' />
           {/* <span className='absolute'>Click or Drag images</span> */}
         </div>
-        <div className='flex overflow-y-auto flex-wrap gap-1 p-0 sm:p-3 max-h-[200px]'>
+        <div className='flex overflow-y-auto flex-wrap gap-10 sm:gap-1 p-0 sm:p-3 max-h-[200px]'>
           {images.map((img, i) => {
             return <img src={img} key={i} className='h-[100px] w-[100px] rounded-2xl' />
           })}
